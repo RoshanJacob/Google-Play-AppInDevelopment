@@ -184,6 +184,12 @@ function draw() {
 
   reset.position(930, 10);
   resetDrawings.position(1025, 10);
+
+  for (let i = 0; i < touches.length; i++) {
+    if (touches[i].length > 0) {
+      startDrawing();
+    }
+  }
 }
 
 function clearDrawing() {
